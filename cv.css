@@ -1,0 +1,220 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+	background: #eccc54;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	padding: 40px 0;
+	
+}
+
+header .logo {
+	text-align: center;
+	margin-bottom: 40px;
+	 
+}
+
+header .logo p {
+	color: #696969;
+}
+
+h3 {
+	color:#696969;
+}
+
+
+.part {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 400px;
+	margin: auto;
+	text-align: justify-all;
+}
+
+.contacto {
+	padding: auto;
+	margin: auto;
+	max-width: 450px;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+.octo, .octo div {
+  margin: 0 auto;
+  transform-origin: ;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+.octo, .octo div {
+  width: 270px;
+  height: 270px;
+}
+.octo {
+  transform: rotate(45deg);
+}
+.octo1 {
+  transform: rotate(-45deg);
+}
+
+.octo div img{
+	display: block;
+	animation: movimiento 3s linear infinite;
+}
+
+.estudios {
+	margin-left: 20px;
+	display: flex;
+
+	flex-wrap: wrap;
+	align-items: center;
+	
+	justify-content: center;
+
+
+	
+
+}
+.flex-item {
+	flex:0 0 50%;
+
+}
+
+.lenguajes {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.burbuja {
+	
+	border-radius: 50%;
+	background: #fff;
+	opacity: .3;
+	position: absolute;
+	bottom: -120;
+	
+	animation: burbujas 3s linear infinite;
+
+}
+
+.burbuja:nth-child(1){
+	width: 80px;
+	height: 80px;
+	left: 5%;
+	animation-duration: 3s;
+}
+
+.burbuja:nth-child(2){
+	width: 100px;
+	height: 100px;
+	left: 5%;
+	animation-duration: 4s;
+}
+
+.burbuja:nth-child(3){
+	width: 90px;
+	height: 90px;
+	left: 35%;
+	animation-duration: 5s;
+
+
+}
+
+.burbuja:nth-child(4){
+	width: 50px;
+	height: 50px;
+	left: 75%;
+	animation-duration: 3s;
+	animation-delay: 4s;
+
+}
+.burbuja:nth-child(5){
+	width: 80px;
+	height: 80px;
+	left: 80%;
+	animation-duration: 3s;
+	animation-delay: 2s;
+
+
+}
+
+.burbuja:nth-child(6){
+	width: 20px;
+	height: 20px;
+	left: 40%;
+	animation-duration: 1s;
+	animation-delay: 2s;
+
+
+}
+.burbuja:nth-child(5){
+	width: 120px;
+	height: 120px;
+	left: 90%;
+	animation-duration: 6s;
+	animation-delay: 2s;
+
+
+}
+
+@keyframes burbujas {
+	0%{
+		bottom: 0;
+		opacity: 0;
+	}
+	50%{
+		opacity: .4;
+	}
+	100%{
+		bottom: 100vh;
+		opacity: 0;
+	}
+}
+
+@keyframes movimiento {
+	0% {
+		transform: translate(0);
+	}
+	50% {
+		transform: translate(30px);
+	}
+	100% {
+		transform: translate(0);
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.octo {
+		margin-top: 20px;
+		margin-bottom: 15px;
+	}
+
+	.estudios {
+		flex-direction: column;
+		text-align: left;
+		align-items: initial;
+
+	}
+	.lenguajes {
+		padding: auto;
+	}
+	.flex-item {
+		margin-top: 20px 
+	}
+
+	}
