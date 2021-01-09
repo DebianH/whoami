@@ -140,7 +140,7 @@ h3 {
 	height: 50px;
 	left: 75%;
 	animation-duration: 3s;
-	animation-delay: 4s;
+	
 
 }
 .burbuja:nth-child(5){
@@ -148,7 +148,7 @@ h3 {
 	height: 80px;
 	left: 80%;
 	animation-duration: 3s;
-	animation-delay: 2s;
+	
 
 
 }
@@ -158,7 +158,7 @@ h3 {
 	height: 20px;
 	left: 40%;
 	animation-duration: 1s;
-	animation-delay: 2s;
+	
 
 
 }
@@ -167,7 +167,7 @@ h3 {
 	height: 120px;
 	left: 90%;
 	animation-duration: 6s;
-	animation-delay: 2s;
+	
 
 
 }
