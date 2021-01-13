@@ -24,10 +24,10 @@
 				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Search">
 			</form>
 			<div class="categorias" id="categorias">
-				<a href="#" class="activo">All</a>
-				<a href="#">Technology</a>
-				<a href="#">Project</a>
-				<a href="#">Security</a>
+				<a href="#" class="activo" id="subtitle">All</a>
+				<a href="#" id="subtitle">Technology</a>
+				<a href="#" id="subtitle">Project</a>
+				<a href="#" id="subtitle">Security</a>
 				<a href="#">Whoami</a>
 			</div>
 		</header>
@@ -233,6 +233,9 @@
     <script>
         
         gsap.to("#sub", { duration:3, y:-50, ease:"bounce.in",repeat:-1,yoyo:true});
+
+        
+        gsap.from("#categorias", {duration:2, delay:1, scale:0, stagger:1, ease:"bounce"});
     </script>
 </body>
 </html>
