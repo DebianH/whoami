@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #585c68;
+  font-size: 14px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.resume {
+  width: 800px;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+}
+
+.resume .resume_left {
+  width: 280px;
+  background: #eccc54;
+}
+
+.resume .resume_left .resume_profile {
+  width: 100%;
+  height: 280px;
+}
+
+.resume .resume_left .resume_profile img {
+  width: 100%;
+  height: 100%;
+}
+
+.resume .resume_left .resume_content {
+  padding: 0 25px;
+}
+
+.resume .title {
+  margin-bottom: 20px;
+}
+
+.resume .resume_left .bold {
+  color: #fff;
+}
+
+.resume .resume_left .regular {
+  color: #F9EEC6;
+}
+
+.resume .resume_item {
+  padding: 25px 0;
+  border-bottom: 2px solid #F9EEC6;
+}
+
+.resume .resume_left .resume_item:last-child,
+.resume .resume_right .resume_item:last-child {
+  border-bottom: 0px;
+}
+
+.resume .resume_left ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.resume .resume_left ul li:last-child {
+  margin-bottom: 0;
+}
+
+.resume .resume_left ul li .icon {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  color: #eccc54;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+.resume .icon i,
+.resume .resume_right .resume_hobby ul li i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resume .resume_left ul li .data {
+  color: #F9EEC6;
+}
+
+.resume .resume_left .resume_skills ul li {
+  display: flex;
+  margin-bottom: 10px;
+  color: #F9EEC6;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume .resume_left .resume_skills ul li .skill_name {
+  width: 25%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #F9EEC6;
+  position: relative;
+}
+
+.resume .resume_left .resume_skills ul li .skill_per {
+  width: 15%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+
+.resume .resume_left .resume_social .semi-bold {
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.resume .resume_right {
+  width: 520px;
+  background: #fff;
+  padding: 25px;
+}
+
+.resume .resume_right .bold {
+  color: #eccc54;
+}
+
+.resume .resume_right .resume_work ul,
+.resume .resume_right .resume_education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.resume .resume_right ul li {
+  position: relative;
+}
+
+.resume .resume_right ul li .date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.resume .resume_right ul li .info {
+  margin-bottom: 20px;
+}
+
+.resume .resume_right ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #eccc54;
+}
+
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 115px;
+  background: #eccc54;
+}
+
+.resume .resume_right .resume_hobby ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume .resume_right .resume_hobby ul li {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #eccc54;
+  border-radius: 50%;
+  position: relative;
+  color: #eccc54;
+}
+
+.resume .resume_right .resume_hobby ul li i {
+  font-size: 30px;
+}
+
+.resume .resume_right .resume_hobby ul li:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -52px;
+  width: 50px;
+  height: 2px;
+  background: #eccc54;
+}
+
+.resume .resume_right .resume_hobby ul li:last-child:before {
+  display: none;
+}
+
+/* Animaciones */
+
+.burbuja {
+  
+  border-radius: 50%;
+  background: #fff;
+  opacity: .3;
+  position: absolute;
+  bottom: -120;
+  
+  animation: burbujas 3s linear infinite;
+
+}
+
+.burbuja:nth-child(1){
+  width: 80px;
+  height: 80px;
+  left: 5%;
+  animation-duration: 3s;
+}
+
+.burbuja:nth-child(2){
+  width: 100px;
+  height: 100px;
+  left: 5%;
+  animation-duration: 4s;
+}
+
+.burbuja:nth-child(3){
+  width: 90px;
+  height: 90px;
+  left: 35%;
+  animation-duration: 5s;
+
+
+}
+
+.burbuja:nth-child(4){
+  width: 50px;
+  height: 50px;
+  left: 75%;
+  animation-duration: 3s;
+  
+
+}
+.burbuja:nth-child(5){
+  width: 80px;
+  height: 80px;
+  left: 80%;
+  animation-duration: 3s;
+  
+
+
+}
+
+.burbuja:nth-child(6){
+  width: 20px;
+  height: 20px;
+  left: 40%;
+  animation-duration: 1s;
+  
+
+
+}
+.burbuja:nth-child(5){
+  width: 120px;
+  height: 120px;
+  left: 90%;
+  animation-duration: 6s;
+  
+
+
+}
+
+@keyframes burbujas {
+  0%{
+    bottom: 0;
+    opacity: 0;
+  }
+  50%{
+    opacity: .4;
+  }
+  100%{
+    bottom: 100vh;
+    opacity: 0;
+  }
+}
+
+/* Super Boton*/
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.btn-neon{
+
+position: relative;
+display: inline-block;
+padding: 15px 30px;
+color: #fff;
+letter-spacing: 4px;
+text-decoration: none;
+font-size: 18px;
+overflow: hidden;
+transition: 0.2s;
+
+}
+.btn-neon:hover{
+ background: #585c68;
+ box-shadow: 0 0 10px #585c68, 0 0 40px #585c68, 0 0 80px #585c68;
+ transition-delay: 0.5s;
+ }
+
+ .btn-neon span{
+  position: absolute;
+  display: block;
+         }
+  #span1{
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent,#585c68);
+  }
+  .btn-neon:hover #span1{
+  left: 100%;
+  transition: 1s;
+  }
+  #span3{
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent,#585c68);
+  }
+  .btn-neon:hover #span3{
+   right: 100%;
+   transition: 1s;
+   transition-delay: 1s;
+   }
+   #span2{
+   top: -100%;
+   right: 0;
+   width: 2px;
+   height: 100%;
+   background: linear-gradient(180deg, transparent,#585c68);
+   }
+   .btn-neon:hover #span2{
+   top: 100%;
+   transition: 1s;
+   transition-delay: 0.25s;
+   }
+   #span4{
+   bottom: -100%;
+   left: 0;
+   width: 2px;
+   height: 100%;
+   background: linear-gradient(360deg, transparent,#585c68);
+   }
+   .btn-neon:hover #span4{
+   bottom: 100%;
+   transition: 1s;
+   transition-delay: 0.75s;
+   }
