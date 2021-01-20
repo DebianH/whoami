@@ -6,13 +6,22 @@
 }
 
 body {
-	background: #eccc54;
-	font-family: 'Open Sans', sans-serif;
+	background: #FDB833;
+	font-family: 'Merriweather', serif;
+}
+
+#particles-js {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: -1;
 }
 
 a {
 	text-decoration: none;
 }
+
+
 
 .contenedor {
 	width: 90%;
@@ -64,7 +73,7 @@ header .categorias {
 header .categorias a {
 	color: #696969;
 	margin: 10px 20px;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 700;
 }
 

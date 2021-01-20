@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
 	<link rel="stylesheet" href="estilos.css">
@@ -12,7 +15,7 @@
 
 </head>
 <body>
-
+	<div id="particles-js"></div>
 	<div class="contenedor">
 		<header>
 			<div class="logo">
@@ -227,8 +230,13 @@
 
 	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
 	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
-	<script src="main.js"></script>
+	
+	<!-- Particles.js-->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
+	<script src="js/main.js"></script>
+
+	<!-- Gsap-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script>
         
@@ -237,5 +245,7 @@
         
         gsap.from("#categorias", {duration:2, delay:1, scale:0, stagger:1, ease:"bounce"});
     </script>
+
+    
 </body>
 </html>
