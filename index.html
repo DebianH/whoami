@@ -1,251 +1,221 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
-	<link rel="stylesheet" href="estilos.css">
-	<title>David Hernandez</title>
-	
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/mis.ico" type="image/x-icon">
+  <title>My Website</title>
 </head>
 <body>
-	<div id="particles-js"></div>
-	<div class="contenedor">
-		<header>
-			<div class="logo">
-				
-				<h1 id="titulo">David Hernández</h1>
-				<p id="sub"><a href="hv.html" >Software Developer</a></p>
-			</div>
-			<form action="">
-				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Search">
-			</form>
-			<div class="categorias" id="categorias">
-				<a href="#" class="activo" id="subtitle">All</a>
-				<a href="#" id="subtitle">Technology</a>
-				<a href="#" id="subtitle">Project</a>
-				<a href="#" id="subtitle">Security</a>
-				<a href="#">Whoami</a>
-			</div>
-		</header>
-
-		<section class="grid" id="grid">
-			<div class="item"
-				data-categoria="technology"
-				data-etiquetas="web html desarrollo"
-				data-descripcion="Medium Level 80%">
-				<div class="item-contenido">
-					<img src="img/html_logo.png" alt="logo html5">
-
-				</div>
-
-			</div>
-			<div class="item"
-				data-categoria="technology"
-				data-etiquetas="web html desarrollo"
-				data-descripcion="Medium Level 70%">
-				<div class="item-contenido">
-					<img src="img/css3-logo.png" alt="">
-				</div>
-			</div>
-			<div class="item"
-				data-categoria="technology"
-				data-etiquetas="web html desarrollo"
-				data-descripcion="Basic Level-Learning 30%">
-				<div class="item-contenido">
-					<img src="img/JavaScript-Logo.png" alt="">
-				</div>
-			</div>
-			<div class="item"
-				data-categoria="technology"
-				data-etiquetas="web diseño"
-				data-descripcion="Medium Level 75%">
-				<div class="item-contenido">
-					<img src="img/photo.png" alt="">
-				</div>
-			</div>
-			<div class="item"
-				data-categoria="technology"
-				data-etiquetas="desarrollo versiones"
-				data-descripcion="Basic Level-Learning 56%">
-				<div class="item-contenido">
-					<img src="img/git.png" alt="">
-				</div>
-			</div>
-			<div class="item"
-				data-categoria="technology"
-				data-etiquetas="web html desarrollo"
-				data-descripcion="Medium Level 50%">
-				<div class="item-contenido">
-					<img src="img/materialize.png" alt="">
-				</div>
-			</div>
-			<div class="item"
-				data-categoria="technology"
-				data-etiquetas="web desarrollo maquetado"
-				data-descripcion="Medium Level 60%">
-				<div class="item-contenido">
-					<img src="img/Bootstrap-Logo.png" alt="">
-				</div>
-			</div>
-			<div class="item"
-				data-categoria="technology"
-				data-etiquetas="web desarrollo base sql"
-				data-descripcion="Basic Level-Learning 40%">
-				<div class="item-contenido">
-					<img src="img/flask-logo.png" alt="">
-				</div>
-			</div>
-			<div class="item"
-				data-categoria="security"
-				data-etiquetas="automatizacion desarrollo script"
-				data-descripcion="Bash.- Basic Level-Learning 48%">
-				<div class="item-contenido">
-					<img src="img/bash.png" alt="">
-				</div>
-			</div>
-			<div class="item"
-				data-categoria="security"
-				data-etiquetas="securidad"
-				data-descripcion="Medium Level 70%">
-				<div class="item-contenido">
-					<img src="img/Linux-Logo.png" alt="">
-				</div>
-			</div>
-			<div class="item"
-				data-categoria="security"
-				data-etiquetas="desarrollo script automatizacion"
-				data-descripcion="Medium Level 65%">
-				<div class="item-contenido">
-					<img src="img/python.png" alt="">
-				</div>
-			</div>
-			<div class="item"
-				data-categoria="security"
-				data-etiquetas="seguridad informacion"
-				data-descripcion="knowledge and management of various hacking tools">
-				<div class="item-contenido">
-					<img src="img/Ctf-logo.png" alt="">
-				</div>
-			</div>
-
-			<div class="item" id="oculto" 
-				data-categoria="project"
-				data-etiquetas="seguridad informacion"
-				data-descripcion="Project freelance www.repuestosparra.com">
-				<div class="item-contenido">
-					<img src="img/proyecto1.jpg" alt="">
-				</div>
-			</div>
-			<div class="item" id="oculto" 
-				data-categoria="project"
-				data-etiquetas="proyectos web"
-				data-descripcion="Project freelance www.abelao.com">
-				<div class="item-contenido">
-					<img src="img/proyecto2.jpg" alt="">
-				</div>
-			</div>
-
-			<div class="item" id="oculto" 
-				data-categoria="security"
-				data-etiquetas="proyectos web hacking python"
-				data-descripcion="Tool osint with python https://github.com/DebianH/Osint_Dns">
-				<div class="item-contenido">
-					<img src="img/dns.jpg" alt="">
-				</div>
-			</div>
-			<div class="item" id="oculto" 
-				data-categoria="project"
-				data-etiquetas="proyectos web python"
-				data-descripcion="Learning python https://github.com/DebianH/Balanceo_signos">
-				<div class="item-contenido">
-					<img src="img/balanceo.jpg" alt="">
-				</div>
-			</div>
-
-			<div class="item" id="oculto" 
-				data-categoria="whoami"
-				data-etiquetas="proyectos web"
-				data-descripcion="My CV Flat{Click in Software Developer}">
-				<div class="item-contenido">
-					<img src="img/whoami.jpg" alt="">
-				</div>
-			</div>
-			<div class="item" id="oculto" 
-				data-categoria="project"
-				data-etiquetas="proyectos web crud python"
-				data-descripcion="Project create with Python-Flask-SQLAlchemy https://github.com/DebianH/Crud_Python_AppWeb">
-				<div class="item-contenido">
-					<img src="img/crud.jpg" alt="">
-				</div>
-			</div>
-			
-		</section>
-
-		<section class="overlay " id="overlay">
-			<div class="contenedor-img">
-				<button id="btn-cerrar-popup"><i class="fa fa-times" aria-hidden="true"></i></button>
-				<img src="" alt="">
-			</div>
-			<p class="descripcion"></p>
-		</section>
-
-		<footer class="contenedor">
-			<div class="redes-sociales">
-				<div class="contenedor-icono">
-					<a href="https://twitter.com/DevianHernandez" target="_blank" class="twitter">
-						<i class="fa fa-twitter" aria-hidden="true"></i>
-					</a>
-				</div>
-				<div class="contenedor-icono">
-					<a href="https://wa.link/1k924f" target="_blank" class="whatsapp">
-						<i class="fa fa-whatsapp" aria-hidden="true"></i>
-					</a>
-				</div>
-							
-				<div class="contenedor-icono">
-					<a href="https://github.com/DebianH" target="_blank" class="github">
-						<i class="fa fa-github" aria-hidden="true"></i>
-					</a>
-				</div>
-				<div class="contenedor-icono">
-					<a href="https://www.linkedin.com/in/david-hern%C3%A1ndez-s%C3%A1nchez-691a83202/" target="_blank" class="linkedin">
-						<i class="fa fa-linkedin" aria-hidden="true"></i>
-					</a>
-				</div>
-			</div>
-			<div class="creado-por">
-				
-			</div>
-		</footer>
-
-	</div>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero"><h1><span>F</span>ront <span>E</span>nd</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">Clients</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
 
 
-	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
-	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
-	
-	<!-- Particles.js-->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hola, <span></span></h1>
+        <h1>Gracias por venir <span></span></h1>
+        <h1>David Hernandez <span></span></h1>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
 
-	<script src="js/main.js"></script>
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Serv<span>i</span>ces</h1>
+        <p>Mi experiencia como freelance te puede ayudar a construir tu sitio web increible.</p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><i class='bx bxl-dev-to'></i></div>
+          <h2>Diseño Web</h2>
+          <p>Construimos tu sitio web, con caracteristicas para el posicionamiento en buscadores CEO, botones interactivos y conectado a tus redes sociales.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><i class='bx bx-code-block'></i></div>
+          <h2>Software</h2>
+          <p>Software a medida de acuerdo a tus necesidades con programas de escritorio y aplicaciones web conectadas a bases de datos como MYSQL.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><i class='bx bx-photo-album'></i></div>
+          <h2>Tu Marca</h2>
+          <p>Diseño personalizado de tu logo además del posicionamiento de tu marca en internet por redes sociales como facebook, instagram, google maps etc.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><i class='bx bx-book-reader'></i></div>
+          <h2>Aprendizaje</h2>
+          <p>Guia de estudio para todos quienes desean ingresar en este mundo del desarrollo de software, es Gratis y lo hago como aporte a la comunidad. Contact me!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
 
-	<!-- Gsap-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script>
-        
-        gsap.to("#sub", { duration:3, y:-50, ease:"bounce.in",repeat:-1,yoyo:true});
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 1</h1>
+            <h2>Landing Page</h2>
+            <p>Este sitio web tipo landing fue realizada para una empresa local con las siguientes tecnologias: Html5, Css3. JavaScript, Bootstrap, Google Fonts, Scrollreveal etc. Puedes verla en www.repuestosparra.com</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/Capture1.JPG" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 2</h1>
+            <h2>Landing Page</h2>
+            <p>Sitio construido el 2020 con varias tecnologias además está alojada en github page como hosting y apuntando al dominio en godaddy. Html5, Css3, JavaScript, Materialize, Google Fonts, para los iconos fonts awesome entre otros. www.abelao.com</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/Capture2.JPG" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 3</h1>
+            <h2>My First Portafolio</h2>
+            <p>Para reafirmar mi conocimiento me puse el reto de crear mi sitio web con las tecnologias que adquirido donde puedo destacar: gisap para dar movimiento a elementos y particles.js que da un fondo vistoso</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/Capture3.JPG" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 4</h1>
+            <h2>App Web</h2>
+            <p>"Aprender haciendo" he utilizado Django como framework para construir esta aplicacion web tipo CRUD. Puedes revisar todos los proyectos que estoy creando en mi repositorio de github: https://github.com/DebianH</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/Capture6.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 5</h1>
+            <h2>App de Compras</h2>
+            <p>Esta aplicacion web esta en proceso de construcción, estoy seguro que puede ser util para realizar nuestras compras, donde podras guardar lo que tienes que comprar, agregar precios, incluso en un futuro sugerencias en donde comprar etc. Además que tiene un lindo diseño responsive y un modo nocturno. Proximamente.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/Capture4.JPG" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
 
-        
-        gsap.from("#categorias", {duration:2, delay:1, scale:0, stagger:1, ease:"bounce"});
-    </script>
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/David.jpeg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>Front End Developer</h2>
+        <p>Un eterno estudiante, tengo 1 año de experiencia en el desarrollo de software, he realizado proyectos para pequeñas empresas de la ciudad con Html5, Css3, JavaScript para el diseño web. Tambien he construido programas personalizados con Python, Django, Mysql. 
+          "GH Desarrollo" es mi emprendiendo en la creación de software. Te invito a leer mi curriculum o podrias visitar mi repositorio. https://github.com/DebianH</p>
+        <a href="hv.html" class="cta">Read more</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
 
-    
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div><h1 class="section-title">Contact <span>info</span></h1></div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+593 98231****</h2>
+            <h2>+593 2600****</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>davidhernand****@hotmail.com</h2>
+            <h2>rootdelinux@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Quito - Ecuador</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1><span>D</span>avid <span>H</span>ernandez</h1></div>
+      <h2>Your Complete Web Solution</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://wa.link/1k924f"><img src="https://img.icons8.com/bubbles/100/000000/whatsapp.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/david-hern%C3%A1ndez-s%C3%A1nchez-691a83202/"><img src="https://img.icons8.com/bubbles/100/000000/linkedin.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://twitter.com/DevianHernandez"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://github.com/DebianH"><img src="https://img.icons8.com/bubbles/100/000000/github.png"/></a>
+        </div>
+      </div>
+      <p>Copyright © GH Desarrollo 2021</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+  
 </body>
 </html>
