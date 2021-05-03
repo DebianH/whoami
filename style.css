@@ -44,7 +44,6 @@ p {
 .section-title span {
 	color: #FDB833;
 }
-
 .cta {
 	display: inline-block;
 	padding: 10px 30px;
@@ -70,7 +69,6 @@ p {
 .brand h1 span {
 	color: #FDB833;
 }
-
 /* Header section */
 #header {
 	position: fixed;
@@ -197,7 +195,6 @@ p {
 	top: 0;
 }
 /* End Header section */
-
 /* Hero Section */
 #hero {
 	background-image: url(./img/fondus.gif);
@@ -261,9 +258,7 @@ p {
 #hero h1:nth-child(3) span {
 	animation-delay: 2.5s;
 }
-
 /* End Hero Section */
-
 /* Services Section */
 #services .services {
 	flex-direction: column;
@@ -329,7 +324,6 @@ p {
 	text-align: left;
 }
 /* End Services Section */
-
 /* Projects section */
 #projects .projects {
 	flex-direction: column;
@@ -402,7 +396,6 @@ p {
 	transform: scale(1.1);
 }
 /* End Projects section */
-
 /* About Section */
 #about .about {
 	flex-direction: column-reverse;
@@ -450,7 +443,6 @@ p {
 	z-index: -1;
 }
 /* End About Section */
-
 /* contact Section */
 #contact .contact {
 	flex-direction: column;
@@ -493,7 +485,6 @@ p {
 	font-weight: 500;
 }
 /*End contact Section */
-
 /* Footer */
 #footer {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
@@ -533,7 +524,6 @@ p {
 	font-size: 1.3rem;
 }
 /* End Footer */
-
 /* Keyframes */
 @keyframes hamburger_puls {
 	0% {
@@ -567,7 +557,6 @@ p {
 	}
 }
 /* End Keyframes */
-
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
 	.cta {
@@ -577,20 +566,17 @@ p {
 	h1.section-title {
 		font-size: 6rem;
 	}
-
 	/* Hero */
 	#hero h1 {
 		font-size: 7rem;
 	}
 	/* End Hero */
-
 	/* Services Section */
 	#services .service-bottom .service-item {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
 	/* End Services Section */
-
 	/* Project */
 	#projects .project-item {
 		flex-direction: row;
@@ -611,7 +597,6 @@ p {
 		height: 100%;
 	}
 	/* End Project */
-
 	/* About */
 	#about .about {
 		flex-direction: row;
@@ -636,7 +621,6 @@ p {
 		text-align: left;
 	}
 	/* End About */
-
 	/* contact  */
 	#contact .contact {
 		flex-direction: column;
@@ -668,11 +652,9 @@ p {
 		width: 100%;
 		text-align: left;
 		padding-left: 20px;
-	}
-	/* End contact  */
+	}	
 }
 /* End Media Query For Tablet */
-
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
 	/* header */
@@ -696,7 +678,6 @@ p {
 		display: none;
 	}
 	/* End header */
-
 	#services .service-bottom .service-item {
 		flex-basis: 22%;
 		margin: 1.5%;
